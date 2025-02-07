@@ -8,7 +8,7 @@ interface SectionProps {
   mb?: string;
 }
 
-const DesktopSection: React.FC<SectionProps> = ({ title, headerBg, contentBg, mb = "44", children }) => {
+const DesktopSection: React.FC<SectionProps> = ({ title, headerBg, contentBg, children }) => {
   return (
     <div className="w-full px-12 flex flex-col">
       <div>
@@ -24,7 +24,7 @@ const DesktopSection: React.FC<SectionProps> = ({ title, headerBg, contentBg, mb
             </h1>
           )}
         </div>
-        <div className={`w-full mb-${mb} mr-6 flex flex-wrap items-start ${contentBg}`}>
+        <div className={`w-full mr-6 flex flex-wrap items-start ${contentBg}`} style={{marginBottom: title === '' ? '0px' : '120px'}}>
           {children}
         </div>
       </div>
