@@ -13,7 +13,7 @@ const MobileFooter = () => {
 
     return (
         <MobileSection title={""} headerBg={"white"} contentBg={"white"}>
-            <footer className="w-full h-full bg-red-500 px-0 flex flex-col">
+            <footer className="w-full h-full px-0 flex flex-col">
                 <div className="w-full h-1/2 flex justify-end items-center">
                     <p
                         className="text-black font-helveticaLight cursor-pointer"
